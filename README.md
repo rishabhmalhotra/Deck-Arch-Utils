@@ -11,4 +11,4 @@ Utilities to work with SteamDeck's desktop mode, esp with external monitors. Scr
 7. Sometimes, using the UI to unzip a large file(eg: game) throws a storage exception. This can be confusing since users may see enough storage available in their target dir. (eg: SD card). This does not necessarily mean that you have a damaged SD card(though you may), it is a bug with the way Ark(the default zip tool) interfaces with arch. To overcome this, use `./zip-cmd.sh _source-path__ __target-path__`
 8. Always run a test when using a new SD card to validate it has the storage the system shows it does. There are utils for this but the easiest way is to copy over a large file/files to fill it up, then delete those files to reclaim space.
 
-<b> I will keep this repo updated for the benefit of the community as I create more utilities to make life easier. Fee free to star this repo so you get notified of any updates I make.
+<b> I will keep this repo updated for the benefit of the community as I create more utilities to make life easier. Feel free to star/follow this repo so you get notified of any updates I make.
