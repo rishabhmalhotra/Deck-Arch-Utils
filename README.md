@@ -14,12 +14,14 @@ Utilities to work with SteamDeck's desktop mode, esp with external monitors. Scr
 <br> Or you can use the utility f3. I have provided a script to make this simple for you. Simply run `./verify_sd_card.sh` and let it do it's thing.
 
 ## Common Errors:
-1. `./set_brightness.sh _val_` returns `ls: cannot access /dev/i2c-*: No such file or directory`. 
+1. <s> `./set_brightness.sh _val_` returns `ls: cannot access /dev/i2c-*: No such file or directory`. 
 <br><i>Reason: </i>
 This happening likely because the monitor config has not been loaded yet. 2 common reasons: In case steam os has been updated, steam will wipe any custom scripts or configs not under `/home`, it's just the way SteamDeck updates. Well, under the hood it isn't as much an update as it is a new flash.
 <br><i>Fix: </i> 
 In case of a system update, you need to run `./run_post_steamos_update.sh` first.
 <br> Else, you can just try running `./get_brightness.sh` first before trying to set brightness.
+</s>
+<br> This error is now resolved as of release `v1.0` and users should no longer have to worry about it.
 
 ## Common Issues:
 1. On downloading apps such as Spotify, you may notice taht you are not able to sign in with 3p providers like Facebook. 
